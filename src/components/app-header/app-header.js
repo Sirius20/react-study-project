@@ -22,11 +22,11 @@ const Header = styled.div`
     }
 `;
 
-const AppHeader = () => {
+const AppHeader = ({liked, allPosts}) => {
     return (//можно превратить в другой компонент, например ссылку через as="a"
          <Header> 
             <h1>Natalya</h1>
-            <h2>5 записей, понравилось 0</h2>
+            <h2>{allPosts} записей, понравилось {liked}</h2>
         </Header>
     )
 }
